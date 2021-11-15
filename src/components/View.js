@@ -2,18 +2,23 @@ import React from "react";
 
 const View = (props) => {
   return (
-    <div>
-      <div className="lines"></div>
-      <div className="view_form">
-        <h1>Check your</h1>
+    <div className="view">
+      <div className="notepad">
         <p>
-          Firstname:
-          {props.first}
+          Firstname: <span>{props.first}</span>
         </p>
-        <p>Lastname: {props.last}</p>
-        <p>Phone: {props.phone}</p>
-        <p>Role: {props.role}</p>
-        <p>Message: {props.message}</p>
+        <p>
+          Lastname: <span>{props.last}</span>
+        </p>
+        <p>
+          Phone: <span>{props.phone}</span>
+        </p>
+        <p>
+          Role: <span>{props.role}</span>
+        </p>
+        <p>
+          Message: <span>{props.message}</span>
+        </p>
       </div>
     </div>
   );

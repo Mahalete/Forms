@@ -1,124 +1,133 @@
-body {
-  align-items: center;
-  background-color: lightcyan;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-}
-form {
-  background-color: rgb(0, 48, 80);
-  height: 500px;
-  width: 600px;
-  margin-left: 2rem;
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
 
-  margin-top: 2rem;
-  border-radius: 3px;
-  padding-top: 1.5rem;
-  text-align: center;
-  color: whitesmoke;
-}
-label {
-  font-size: 14px;
-  color: whitesmoke;
-  height: 5px;
-  width: 100px;
-
-  margin-left: 5rem;
-
-  float: left;
-
-  text-align: left;
-  margin-left: 3rem;
-  clear: both;
-  float: left;
-  margin-top: 1rem;
-  margin-right: 1rem;
-}
-
-input {
-  height: 20px;
-  width: 300px;
-
-  margin-right: 4rem;
-  padding-top: 5px;
-  padding-left: 5px;
-
-  margin-bottom: 1rem;
-}
-select {
-  margin-top: 0.5rem;
-  padding-right: 3.5rem;
-  height: 30px;
-  float: left;
-  margin-left: 2rem;
-}
-textarea {
-  display: flex;
-  justify-content: flex-start;
-  text-align: start;
-  margin-top: 6rem;
-  height: 60px;
-  margin-left: 12rem;
-  padding-left: 40px;
-
-  margin-bottom: 2rem;
-  border-radius: 5px;
-}
-
-button {
-  width: 14rem;
-  height: 2rem;
-  background-color: rgb(60, 114, 55);
-  border: 0;
-  bottom: 0;
-  cursor: pointer;
-  font-size: 20px;
-  border-radius: 3px;
-  margin-left: 1rem;
-  align-items: center;
-  color: white;
-}
-
-/**********VIEW SECTION********/
-.view_form {
-  background-color: #f5f5f5;
-  width: 600px;
-  margin: 0 auto;
-  padding: 0;
-  text-align: left;
-  color: black;
-}
-p {
-  color: #555;
-  font-size: 14px;
-  padding-top: 1.5rem;
-  width: 600px;
-  font-family: courier, monospace;
-  border-top: 1px solid #dedede;
-
-  text-indent: 25px;
-  height: 30px;
-
-  text-transform: capitalize;
-}
-.lines {
-  border-left: 1px solid #be3624;
-  border-right: 1px solid #be3624;
-  width: 2px;
-  float: left;
-  height: 330px;
-  margin-left: 40px;
-}
-​ body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+input[type="submit"],
+button {
+  background-color: darkolivegreen;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.9rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+input[type="submit"] {
+  margin-left: 150px;
+  width: 250px;
+}
+
+button {
+  width: 48%;
+  margin-top: 2rem;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: rgb(45, 60, 19);
+}
+
+.secondary {
+  border: darkolivegreen;
+  color: darkolivegreen;
+  background: transparent;
+}
+
+/***************** FORM COMPONENT *********************/
+form {
+  padding: 2rem;
+  background: rgb(11, 57, 95);
+  color: white;
+}
+label {
+  width: 150px;
+  display: inline-block;
+}
+form div {
+  margin: 1rem 0;
+}
+input,
+textarea,
+select {
+  font-family: "Roboto" sans-serif;
+  background: #f4f4f4;
+  border: 1px solid rgb(102, 102, 102);
+  width: 250px;
+  padding: 0.8rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/***************** VIEW COMPONENT *********************/
+.view {
+  padding: 2rem;
+}
+
+.notepad {
+  background: #f4f4f4;
+  margin: 1rem 0;
+  position: relative;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
+}
+
+.notepad::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  border-left: 1px solid rgb(255, 77, 0);
+  border-right: 1px solid rgb(255, 77, 0);
+  position: absolute;
+  left: 35px;
+}
+
+.notepad p {
+  padding: 1rem;
+  border-bottom: 1px dotted rgb(145, 145, 145);
+  text-indent: 50px;
+}
+
+.notepad span {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  margin-left: 15px;
+}
+
+/***************** POPUP COMPONENT *********************/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 5px #333;
+  margin: 0 auto;
+}
+.popup p {
+  padding: 1rem 0;
 }

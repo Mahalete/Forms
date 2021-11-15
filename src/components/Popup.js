@@ -1,13 +1,36 @@
 import React from "react";
 
+const closeHandler = () => {
+  window.location.reload();
+};
+
 const Popup = (props) => {
   return (
-    <div>
-      <p>Firstname: {props.first}</p>
-      <p>Lastname: {props.last}</p>
-      <p>Phone: {props.phone}</p>
-      <p>Role: {props.role}</p>
-      <p>Message: {props.message}</p>
+    <div className="overlay">
+      <div className="popup">
+        <h1>Your note:</h1>
+        <div>
+          <p>
+            First name: <span>{props.first}</span>
+          </p>
+          <p>
+            Last name: <span>{props.last}</span>
+          </p>
+          <p>
+            Phonenumber: <span>{props.phone}</span>
+          </p>
+          <p>
+            Message: <span>{props.message}</span>
+          </p>
+          <p>
+            Role: <span>{props.role}</span>
+          </p>
+          <button onClick={closeHandler}>Yes, I am sure</button>
+          <button className="secondary" onClick={closeHandler}>
+            Nope, don't want to post it
+          </button>
+        </div>
+      </div>
     </div>
   );
 };
