@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
+.view {
+  background-color: white;
+  padding-buttom: 10rem;
+  margin: 3rem;
+  font-family: "Mohave", sans-serif;
+  font-size: 1.5rem;
+  width: 100%;
+  padding: 1.5rem;
+}
+.writing_pad {
+  background: #f4f4f4;
+  margin: 1rem 0;
+  position: relative;
+  box-shadow: 0 0 5px rgb(121, 121, 121);
+  height: auto;
+  color: black;
+}
+.writing_pad p {
+  padding: 1rem;
+  border-bottom: 1px dotted rgb(145, 145, 145);
+  text-indent: 50px;
+}
+
+.writing_pad span {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}

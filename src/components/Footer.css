@@ -1,0 +1,23 @@
+.footer {
+  margin-top: auto;
+  bottom: 1rem;
+  background: #111;
+  height: 80px;
+  width: 100vw;
+  padding-top: 0px;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 3rem;
+}

@@ -1,23 +1,22 @@
-import React from "react";
-
-const View = (props) => {
+import "../components/View.css";
+const View = ({ firstName, lastName, PhoneNumber, role, message }) => {
   return (
     <div className="view">
-      <div className="notepad">
+      <div className="writing_pad">
         <p>
-          Firstname: <span>{props.first}</span>
+          First name:<span className=""> {firstName}</span>
         </p>
         <p>
-          Lastname: <span>{props.last}</span>
+          Last name:<span className="span"> {lastName}</span>
         </p>
         <p>
-          Phone: <span>{props.phone}</span>
+          Phone number:<span className="spanCanvea"> {PhoneNumber}</span>
         </p>
         <p>
-          Role: <span>{props.role}</span>
+          Role: <span className="spanCanvea">{role}</span>
         </p>
         <p>
-          Message: <span>{props.message}</span>
+          Message:<span className="spanCanvea"> {message}</span>
         </p>
       </div>
     </div>

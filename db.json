@@ -1,0 +1,61 @@
+{
+  "notes": [
+    
+    {
+      "id": 3,
+      "firstName": "Oliver",
+      "lastName": "Twist",
+      "phoneNumber": "0998855656",
+      "role": "tester",
+      "message": "Focus on this message"
+    },
+    {
+      "firstName": "Jason",
+      "lastName": "Born",
+      "phoneNumber": "987654678",
+      "role": "teacher",
+      "message": "Hi, Welcome",
+      "id": 4
+    },
+    {
+      "firstName": "lili",
+      "lastName": "thomas",
+      "phoneNumber": "348454367678",
+      "role": "teacher",
+      "message": "here we go",
+      "id": 5
+    },
+    {
+      "firstName": "Mahalete",
+      "lastName": "Haile",
+      "phoneNumber": "+35844123456",
+      "role": "developer",
+      "message": "new dev",
+      "id": 6
+    },
+    {
+      "firstName": "Mahi",
+      "lastName": "A",
+      "phoneNumber": "+358123456",
+      "role": "teacher",
+      "message": "some more text",
+      "id": 7
+    },
+    {
+      "firstName": "Saron",
+      "lastName": "Ali",
+      "phoneNumber": "654739833",
+      "role": "teacher",
+      "message": "i teach art",
+      "id": 8
+    },
+    {
+      "firstName": "Mahalete",
+      "lastName": "Alemu",
+      "phoneNumber": "+35823457",
+      "role": "tester",
+      "message": "yes",
+      "id": 9
+    }
+  ]
+}

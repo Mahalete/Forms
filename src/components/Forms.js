@@ -1,59 +1,56 @@
 import React from "react";
 
-const Form = (props) => {
+const Form = ({ popUp, change }) => {
   return (
-    <form onSubmit={props.submit}>
-      <div>
-        <label htmlFor="firstname">First name</label>
+    <div className="form">
+      <form onSubmit={popUp}>
+        <label htmlFor="firstName" id="firstName">
+          First name
+        </label>
         <input
           type="text"
-          name="firstname"
-          id="firstname"
+          name="firstName"
+          id="firstName"
+          onChange={change}
           required
-          onChange={props.change}
         />
-      </div>
-      <div>
-        <label htmlFor="lastname">Last name</label>
+        <label htmlFor="lastName" id="lastName">
+          Last name
+        </label>
         <input
           type="text"
-          name="lastname"
-          id="lastname"
+          name="lastName"
+          id="lastName"
+          onChange={change}
           required
-          onChange={props.change}
         />
-      </div>
-      <div>
-        <label htmlFor="phone">Phonenumber</label>
+        <label htmlFor="PhoneNumber" id="PhoneNumber">
+          Phone number
+        </label>
         <input
-          type="phone"
-          name="phone"
-          id="phone"
+          type="text"
+          name="phoneNumber"
+          id="PhoneNumber"
+          onChange={change}
           required
-          onChange={props.change}
         />
-      </div>
-      <div>
-        <label htmlFor="role">Role</label>
-        <select name="role" id="role" onChange={props.change}>
-          <option value="teacher" selected>
-            Teacher
-          </option>
-          <option value="student">Student</option>
-          <option value="other">Other</option>
+        <label htmlFor="role" id="role">
+          Role
+        </label>
+        <select name="role" id="role" onChange={change} required>
+          <option value="" disabled></option>
+          <option value="developer">Developer</option>
+          <option value="teacher">Teacher</option>
+          <option value="tester">Tester</option>
         </select>
-      </div>
-      <div>
-        <label htmlFor="message">Message</label>
-        <textarea
-          name="message"
-          id="message"
-          required
-          onChange={props.change}
-        ></textarea>
-      </div>
-      <input type="submit" value="Send" />
-    </form>
+        <label htmlFor="message" id="message">
+          Message
+        </label>
+        <textarea name="message" id="message" onChange={change} required />
+        <br></br>
+        <input className="send_btn" type="submit" value="SEND"></input>
+      </form>
+    </div>
   );
 };
 

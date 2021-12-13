@@ -1,23 +1,48 @@
-.form {
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUpDiv {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 60%;
+  width: 50%;
+  background-color: white;
   padding: 2rem;
-  background: rgb(11, 57, 95);
-  color: white;
+  box-shadow: 0 0 5px #333;
+  margin: 0 auto;
 }
-label {
-  width: 150px;
-  display: inline-block;
+.popUpDiv p span {
+  font-family: Caveat;
+  margin-left: 1rem;
+  font_size: 20px;
 }
-form div {
-  margin: 1rem 0;
+
+.primary {
+  margin-left: 0;
 }
-input,
-textarea,
-select {
-  font-family: "Roboto" sans-serif;
-  background: #f4f4f4;
-  border: 1px solid rgb(102, 102, 102);
-  width: 250px;
-  padding: 0.8rem;
-  border-radius: 5px;
-  font-size: 0.9rem;
+.primary,
+.secondary {
+  display: inline;
+  margin-left: 60px;
+  padding: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.25rem;
+}
+.secondary {
+  border: rgb(46, 87, 11);
+  border-width: 1px;
+  color: rgb(46, 87, 11);
+  background: transparent;
 }
